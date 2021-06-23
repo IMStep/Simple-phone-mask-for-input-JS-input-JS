@@ -1,5 +1,3 @@
-let inputPhone = document.querySelectorAll(".example");
-
 function inputPhoneMask(event) {
     let mask = "+7 (   )   -  -  ";
     target = event.currentTarget;
@@ -27,9 +25,9 @@ function inputPhoneMask(event) {
                 // target.selectionStart = 
             }
         }
-        else if (event.type == "post") {
-            event.preventDefault();
-        }
         else event.preventDefault();
+    }
+    if (event.type == "paste") {
+        event.preventDefault();
     }
 }
