@@ -1,9 +1,4 @@
-let inputPhone = document.querySelectorAll(".input__phone");
-
-for (let i = 0; i < inputPhone.length; i++) {
-    inputPhone[i].addEventListener("keydown", inputPhoneMask);
-    inputPhone[i].addEventListener("focus", inputPhoneMask);
-}
+let inputPhone = document.querySelectorAll(".example");
 
 function inputPhoneMask(event) {
     let mask = "+7 (   )   -  -  ";
