@@ -27,6 +27,9 @@ function inputPhoneMask(event) {
                 // target.selectionStart = 
             }
         }
+        else if (event.type == "post") {
+            event.preventDefault();
+        }
         else event.preventDefault();
     }
 }
