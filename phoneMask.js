@@ -1,9 +1,9 @@
 let example = document.querySelectorAll(".inputPhoneExample");
 
-for (let i = 0; i < inputPhone.length; i++) {
-    inputPhone[i].addEventListener("keydown", inputPhoneMask);
-    inputPhone[i].addEventListener("focus", inputPhoneMask);
-    inputPhone[i].addEventListener("paste", inputPhoneMask);
+for (let i = 0; i < example.length; i++) {
+    example[i].addEventListener("keydown", inputPhoneMask);
+    example[i].addEventListener("focus", inputPhoneMask);
+    example[i].addEventListener("paste", inputPhoneMask);
 }
 
 function inputPhoneMask(event) {
