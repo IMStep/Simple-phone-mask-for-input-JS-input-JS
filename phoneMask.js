@@ -1,3 +1,11 @@
+let example = document.querySelectorAll(".inputPhoneExample");
+
+for (let i = 0; i < inputPhone.length; i++) {
+    inputPhone[i].addEventListener("keydown", inputPhoneMask);
+    inputPhone[i].addEventListener("focus", inputPhoneMask);
+    inputPhone[i].addEventListener("paste", inputPhoneMask);
+}
+
 function inputPhoneMask(event) {
     let mask = "+7 (   )   -  -  ";
     target = event.currentTarget;
@@ -22,7 +30,6 @@ function inputPhoneMask(event) {
         else if (event.key == "Backspace") {
             if (target.selectionStart < 5) {
                 event.preventDefault();
-                // target.selectionStart = 
             }
         }
         else event.preventDefault();
